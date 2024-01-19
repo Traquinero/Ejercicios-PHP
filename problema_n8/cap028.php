@@ -23,7 +23,7 @@ if(isset($_POST["btnCalcular"])){
 
 <html>
     <head>
-    <title>Problema 07</title>
+    <title>Problema 08</title>
     <style style type="text/css">
     <!--
     .TextoFondo {
@@ -33,7 +33,7 @@ if(isset($_POST["btnCalcular"])){
     </style>
     </head>
     <body>
-    <form method="post" action="cap08.php">
+    <form method="post" action="cap028.php">
     <table width="237" border="0">
         <tr>
             <td colspan="2"><strong>Problema 08</strong></td>
