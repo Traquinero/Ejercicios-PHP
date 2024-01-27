@@ -1,26 +1,31 @@
 <?php
-// Determinar si un numero entero es par o impar.
-// variables
 
-$n = ""  ; $r = "" ; 
+// Declarando las variables
+$n = "" ; 
+$valor = "";
+$r = " ";
 
 if(isset($_POST["btnCalcular"])){
-// Entrada
-$n = (int) $_POST["txtn"];
+// Entrada 
+$n = $_POST["txtn"];
+$valor = is_numeric($n); 
 
-if($n % 2 == 0){
-    $r = "Es PAR";
+if($valor == 1){
+    if($n % 2 == 0){
+        $r = "Es PAR";
+    }
+    else{
+        $r = "Es IMPAR";
+    }
 }
-else{
-   $r = "Es IMPAR";
+
 }
-       
-}
+
 ?>
 
 <html>
     <head>
-    <title>Problema 15</title>
+    <title>Problema n15 v2</title>
     <style style type="text/css">
     <!--
     .TextoFondo {
@@ -30,20 +35,20 @@ else{
     </style>
     </head>
     <body>
-    <form method="post" action="cap035.php">
+    <form method="post" action="cap0351.php">
     <table width="237" border="0">
-    <h1>Determinar si un numero entero es par o impar</h1>
+    <h1>Determinar si es PAR o IMPAR</h1>
         <tr>
-            <td colspan="2"><strong>Problema 15</strong></td>
+            <td colspan="2"><strong>Problema n15 V2</strong></td>
         </tr>
         <tr>
-            <td width="83">Numero</td>
+            <td width="100">Numero</td>
             <td>
                 <input name="txtn" type="text"  id="txtn" value="<?=$n?>"/>
             </td>
         </tr>
          <tr>
-            <td width="83">Resultado</td>
+            <td width="100">Resultado</td>
             <td>
                 <input name="txtr" type="text"  id="txtr" value="<?=$r?>"/>
             </td>
