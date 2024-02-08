@@ -21,7 +21,7 @@ else{
 <html>
     <head>
     <title>Problema 15</title>
-    <style style type="text/css">
+    <style type="text/css">
     <!--
     .TextoFondo {
         background-color: #CCFFFF;

@@ -18,7 +18,7 @@ if($num %2 == 0){
 <html>
     <head>
     <title>Problema 17</title>
-    <style style type="text/css">
+    <style type="text/css">
     <!--
     .TextoFondo {
         background-color: #CCFFFF;

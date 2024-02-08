@@ -19,7 +19,7 @@ if($n % 3 == 0 and $n % 5 == 0){
 <html>
     <head>
     <title>Problema 14</title>
-    <style style type="text/css">
+    <style type="text/css">
     <!--
     .TextoFondo {
         background-color: #CCFFFF;

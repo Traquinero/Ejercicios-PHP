@@ -24,7 +24,7 @@ if(isset($_POST["btnCalcular"])){
 <html>
     <head>
     <title>Problema 08</title>
-    <style style type="text/css">
+    <style type="text/css">
     <!--
     .TextoFondo {
         background-color: #CCFFFF;

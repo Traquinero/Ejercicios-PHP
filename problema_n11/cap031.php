@@ -19,7 +19,7 @@ else
 <html>
     <head>
     <title>Problema 11</title>
-    <style style type="text/css">
+    <style type="text/css">
     <!--
     .TextoFondo {
         background-color: #CCFFFF;

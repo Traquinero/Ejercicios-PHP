@@ -26,7 +26,7 @@ if($valor == 1){
 <html>
     <head>
     <title>Problema n15 v2</title>
-    <style style type="text/css">
+    <style type="text/css">
     <!--
     .TextoFondo {
         background-color: #CCFFFF;
