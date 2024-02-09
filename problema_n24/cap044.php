@@ -29,12 +29,11 @@ else{
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
-    <php src="cap044.php"></php>
     <title>Problema 24</title>
 </head>
 <body>
 <form method="post" action="cap044.php">
-    <table width="500" border="0">
+    <table width="500">
     <h1>Problema 24</h1>
     <p>Interfaz para calcular las raices reales de una ecuación de segundo grado.</p>
         <tr>

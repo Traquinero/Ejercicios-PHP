@@ -1,0 +1,31 @@
+
+    .TextoFondo {
+        background-color: #CCFFFF;
+    }
+
+
+    #txta{
+        background-color: rgb(188, 167, 229);
+    }
+ 
+    #txtb{
+        background-color: rgb(188, 167, 229);
+    }
+ 
+    #txtc{
+        background-color: rgb(188, 167, 229);
+    }
+
+    .tablaTitulos{
+        color: white;
+        background-color: black;
+    }
+
+    .tabla{
+        height: 150px;
+        width: 300px;
+        text-align: center;
+    }
+
+
+ 
