@@ -50,7 +50,7 @@ else{
     </style>
 </head>
 <body>
-<form method="post" action="cap044.php">
+<form method="post" action="cap046.php">
     <table width="500">
     <h1>Problema 24</h1>
     <p>Interfaz para calcular las raices reales de una ecuación de segundo grado.</p>
