@@ -1,23 +1,21 @@
 <?php
-// Elabore un algoritmo que obtenga las raices reales de una ecuación de segundo grado. 
+//Realiza un programa que reciba una cantidad de minutos y muestre por 
+//pantalla a cuantas horas y minutos corresponde. Por ejemplo: 1000 minutos son 16 horas y 40 minutos. 
+
 // Declaración de variables
-
-$a = "" ; $b = "" ; $c = "" ; $x1 = 0 ; $x2 = 0 ; 
-
+$tiempo = "" ; $horas = "" ; $minutos = "" ; $num = "";
 
 if (isset($_POST["btnCalcular"])){
-    // Entradas
-$a = (float) $_POST["txta"];
-$b = (float) $_POST["txtb"];
-$c = (float) $_POST["txtc"];
+    $tiempo = (int) $_POST["txttiempo"];
+    // proceso
 
-if($a != 0){
-    $x1 = (-$b + pow((pow($b,2)- 4*$a*$c),1/2))/2*$a;
-    $x2 = (-$b - pow((pow($b,2)- 4*$a*$c),1/2))/2*$a;
-}
-else{
-    echo "Advertencia: Ingrese un valor a diferente de cero ";
-}
+    $num = $tiempo * (1/60);
+    $horas = floor($num); 
+    /* Pero si lo que quieres es redondear a entero tienes dos opciones:
+        con ceil(float) te devuelve el entero superior
+        con floor(float) el inferior
+    */
+    $minutos = $tiempo % 60;
 
 }
 
@@ -28,63 +26,40 @@ else{
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Problema 24</title>
-    <style>
-    .TextoFondo {
-        background-color: #CCFFFF;
-    }
-
-
-    #txta{
-        background-color: rgb(188, 167, 229);
-    }
- 
-    #txtb{
-        background-color: rgb(188, 167, 229);
-    }
- 
-    #txtc{
-        background-color: rgb(188, 167, 229);
-    }
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <title>Problema 25</title>
 </head>
 <body>
+
+<h1>Problema 25</h1>
+
+<p>
+    Realiza un programa que reciba una cantidad de minutos y muestre por <br>
+    pantalla a cuantas horas y minutos corresponde. Por ejemplo: 1000 minutos son 16 horas y 40 minutos. 
+</p>
+
+ 
 <form method="post" action="cap045.php">
-    <table width="500">
-    <h1>Problema 24</h1>
-    <p>Interfaz para calcular las raices reales de una ecuación de segundo grado.</p>
+    <table>
         <tr>
-            <td colspan="2"><strong>Problema 24</strong></td>
+            <td colspan="2"><strong>Problema 25</strong></td>
         </tr>
         <tr>
-            <td width="83">valor a</td>
+            <td width="200">Ingresa la cantidad de minutos:</td>
             <td>
-                <input name="txta" type="text"  id="txta" value="<?=$a?>"/>
+                <input name="txttiempo" type="text"  id="txttiempo" value="<?=$tiempo?>"/>
             </td>
         </tr>
          <tr>
-            <td width="83">valor b</td>
+            <td width="200">Horas</td>
             <td>
-                <input name="txtb" type="text"  id="txtb" value="<?=$b?>" />
+                <input name="txthoras" type="text"  id="txthoras" value="<?=$horas?>" />
             </td>
         </tr>
         <tr>
-            <td width="83">valor c</td>
+            <td width="200">Minutos</td>
             <td>
-                <input name="txtc" type="text"  id="txtc" value="<?=$c?>" />
-            </td>
-        </tr>
-        <tr>
-            <td width="83">x1</td>
-            <td>
-                <input name="txtx1" type="text"  id="txtx1" value="<?=$x1?>" class="TextoFondo"/>
-            </td>
-        </tr>
-        <tr>
-            <td width="83">x2</td>
-            <td>
-                <input name="txtx2" type="text"  id="txtx2" value="<?=$x2?>" class="TextoFondo"/>
+                <input name="txtminutos" type="text"  id="txtminutos" value="<?=$minutos?>" />
             </td>
         </tr>
         <tr>
