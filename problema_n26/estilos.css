@@ -1,18 +1,19 @@
+body{
+    background-color: bisque;
+}
 
-    .TextoFondo {
-        background-color: #CCFFFF;
-    }
+.tabla-estaciones{
+    text-align: center;
+    background-color: aquamarine;
+    width: 500px;
+}
 
+.fondo-fila{
+    background-color: black;
+    color: white;
+}
 
-    #txta{
-        background-color: rgb(188, 167, 229);
-    }
- 
-    #txtb{
-        background-color: rgb(188, 167, 229);
-    }
- 
-    #txtc{
-        background-color: rgb(188, 167, 229);
-    }
- 
+.fondo-resultado{
+    background-color: rgb(208, 244, 244);
+}
+
