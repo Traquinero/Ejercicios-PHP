@@ -1,23 +1,49 @@
 <?php
-// Elabore un algoritmo que obtenga las raices reales de una ecuación de segundo grado. 
+// Dado un número entero de un dígito (0 al 9), devolver el número en letras.
 // Declaración de variables
 
-$a = "" ; $b = "" ; $c = "" ; $x1 = 0 ; $x2 = 0 ; 
-
+$num = "" ; $letra = "";
 
 if (isset($_POST["btnCalcular"])){
-    // Entradas
-$a = (float) $_POST["txta"];
-$b = (float) $_POST["txtb"];
-$c = (float) $_POST["txtc"];
+    $num = (int) $_POST["txtnum"];
+    $letra = (string) $_POST["txtletra"];
 
-if($a != 0){
-    $x1 = (-$b + pow((pow($b,2)- 4*$a*$c),1/2))/2*$a;
-    $x2 = (-$b - pow((pow($b,2)- 4*$a*$c),1/2))/2*$a;
-}
-else{
-    echo "Advertencia: Ingrese un valor a diferente de cero ";
-}
+    switch ($num){
+        case 0:
+            $letra = "CERO";
+        break;
+        case 1:
+            $letra = "UNO";
+        break;
+        case 2:
+            $letra = "DOS";
+        break;
+        case 3:
+            $letra = "TRES";
+        break;
+        case 4:
+            $letra = "CUATRO";
+        break;
+        case 5:
+            $letra = "CINCO";
+        break;
+        case 6:
+            $letra = "SEIS";
+        break;
+        case 7:
+            $letra = "SIETE";
+        break;
+        case 8:
+            $letra = "OCHO";
+        break;
+        case 9:
+            $letra = "NUEVE";
+        break;
+    }
+
+    if ($num > 9){
+        $letra = "Números validos del 0 al 9";
+    }
 
 }
 
@@ -28,63 +54,28 @@ else{
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Problema 24</title>
-    <style>
-    .TextoFondo {
-        background-color: #CCFFFF;
-    }
-
-
-    #txta{
-        background-color: rgb(188, 167, 229);
-    }
- 
-    #txtb{
-        background-color: rgb(188, 167, 229);
-    }
- 
-    #txtc{
-        background-color: rgb(188, 167, 229);
-    }
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <title>Problema 27</title>
 </head>
+
 <body>
+<h1>Problema 27</h1>
+<p>Dado un número entero de un dígito (0 al 9), devolver el número en letras.</p>
 <form method="post" action="cap047.php">
     <table width="500">
-    <h1>Problema 24</h1>
-    <p>Interfaz para calcular las raices reales de una ecuación de segundo grado.</p>
         <tr>
-            <td colspan="2"><strong>Problema 24</strong></td>
+            <td colspan="2"><strong>Problema 27</strong></td>
         </tr>
         <tr>
-            <td width="83">valor a</td>
+            <td width="83">Número</td>
             <td>
-                <input name="txta" type="text"  id="txta" value="<?=$a?>"/>
-            </td>
-        </tr>
-         <tr>
-            <td width="83">valor b</td>
-            <td>
-                <input name="txtb" type="text"  id="txtb" value="<?=$b?>" />
+                <input name="txtnum" type="text"  id="txtnum" value="<?=$num?>"/>
             </td>
         </tr>
         <tr>
-            <td width="83">valor c</td>
+            <td width="83">Letra</td>
             <td>
-                <input name="txtc" type="text"  id="txtc" value="<?=$c?>" />
-            </td>
-        </tr>
-        <tr>
-            <td width="83">x1</td>
-            <td>
-                <input name="txtx1" type="text"  id="txtx1" value="<?=$x1?>" class="TextoFondo"/>
-            </td>
-        </tr>
-        <tr>
-            <td width="83">x2</td>
-            <td>
-                <input name="txtx2" type="text"  id="txtx2" value="<?=$x2?>" class="TextoFondo"/>
+                <input name="txtletra" type="text"  id="txtletra" value="<?=$letra?>" class="TextoFondo"/>
             </td>
         </tr>
         <tr>
