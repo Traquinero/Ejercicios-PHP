@@ -1,0 +1,26 @@
+body{
+    background-color: antiquewhite;
+}
+
+.tabla-facultad{
+    text-align: center;
+    width: 500px;
+    background-color: azure;
+}
+
+.celda-color{
+    background-color: black;
+    color: white;
+}
+
+.tabla-formulario{
+    background-color: rgb(192, 130, 37);
+}
+
+input{
+    width: 200px;
+}
+
+#btnCalcular{
+    width: 100px;
+}

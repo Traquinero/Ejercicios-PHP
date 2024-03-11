@@ -1,0 +1,9 @@
+body{
+    background-color: antiquewhite;
+}
+
+.tabla-promedio{
+    text-align: center;
+    width: 25%;
+    background-color: azure;
+}
