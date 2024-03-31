@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(226, 235, 162);
+}
+
+.tabla-colegio{
+    text-align: center;
+    width: 500px;
+    background-color: rgb(196, 250, 250);
+}
+
+.celda-color{
+    background-color: black;
+    color: white;
+}
+
+.tabla-formulario{
+    background-color: rgb(192, 130, 37);
+}
+
+input{
+    width: 200px;
+}
+
+#btnCalcular{
+    width: 100px;
+}
