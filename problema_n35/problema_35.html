@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilo_problema35.css" rel="stylesheet" type="text/css" />
+    <title>Document</title>
+</head>
+<body>
+    <h1>Problema 35</h1>
+    <p>
+        Determine, en letras el nombre del mes y cuantos días tiene.
+    </p>
+
+<br>
+
+    <form method="post" action="problema35.php">
+    <table width="400" class="tabla-formulario">
+        <tr>
+            <td colspan="2"><strong>Problema 35</strong></td>
+        </tr>
+        <tr>
+            <td width="100">Mes</td>
+            <td>
+                <input name="txtop" type="text"  id="txtop" value="<?=$op?>"/>
+            </td>
+        </tr>
+        <tr>
+            <td width="100">Año</td>
+            <td>
+                <input name="txtnivel" type="text"  id="txtnivel" value="<?=$nivel?>"/>
+            </td>
+        </tr>
+        <tr>
+            <td width="100">Mes</td>
+            <td>
+                <input name="txtmonto" type="text"  id="txtmonto" value="<?=$monto?>"/>
+            </td>
+        </tr>
+        <tr>
+            <td width="100">Días</td>
+            <td>
+                <input name="txtmonto" type="text"  id="txtmonto" value="<?=$monto?>"/>
+            </td>
+        </tr>
+        <tr>
+            <td> &nbsp;</td>
+            <td>
+                <input name="btnCalcular" type="Submit"  id="btnCalcular" value="Calcular"/>
+            </td>
+         </tr>
+    </table>
+    </form>   
+</body>
+</html>

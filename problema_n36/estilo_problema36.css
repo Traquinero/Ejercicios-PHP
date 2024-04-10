@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(20, 207, 213);
+}
+
+.tabla-formulario{
+    background-color: rgb(222, 179, 146);
+}
+
+.tabla-calidad{
+    width: 30%;
+    text-align: center;
+}
+
+.color-letra{
+    color:white;
+    background-color: black;
+}
+

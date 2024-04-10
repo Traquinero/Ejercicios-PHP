@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilo_problema37.css" rel="stylesheet" type="text/css" />
+    <title>Problema 37</title>
+</head>
+<body>
+    <h1>Problema n° 37</h1>
+    <p>
+        Diseñe un algoritmo que califique el puntaje obtenido en el lanzamiento de tres dados <br>
+        en base a la cantidad de seis obtenidos, de acuerdo a lo siguiente:
+    </p>
+
+    <ul>
+        <li><b>Tres seis:</b> Oro</li>
+        <li><b>Dos seis:</b> Plata</li>
+        <li><b>Un seis:</b> Bronce</li>
+        <li><b>Ningún seis:</b> Perdió</li>
+    </ul>
+
+<br>
+
+    <form method="post" action="problema36.php">
+    <table width="400" class="tabla-formulario">
+        <tr>
+            <td colspan="2"><strong>Problema 37</strong></td>
+        </tr>
+        <tr>
+            <td width="100">Dado1</td>
+            <td>
+                <input name="txtop" type="text"  id="txtop" value="<?=$op?>"/>
+            </td>
+        </tr>
+        <tr>
+            <td width="100">Dado2</td>
+            <td>
+                <input name="txtnivel" type="text"  id="txtnivel" value="<?=$nivel?>"/>
+            </td>
+        </tr>
+        <tr>
+            <td width="100">Dado3</td>
+            <td>
+                <input name="txtmonto" type="text"  id="txtmonto" value="<?=$monto?>"/>
+            </td>
+        </tr>
+        <tr>
+            <td width="100">Premio</td>
+            <td>
+                <input name="txtmonto" type="text"  id="txtmonto" value="<?=$monto?>"/>
+            </td>
+        </tr>
+            <td> &nbsp;</td>
+            <td>
+                <input name="btnCalcular" type="Submit"  id="btnCalcular" value="Calcular"/>
+            </td>
+         </tr>
+    </table>
+    </form>   
+</body>
+</html>
